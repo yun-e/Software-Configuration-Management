@@ -1,7 +1,7 @@
-# SVN
-> SVN 학습 내용 정리
+# Software Configuration Management
+> 형상관리툴 학습 내용 정리
 
-## Summary
+## SVN
 
 ### Subversion 이란?
  - 버전 관리 시스템의 한 종류
@@ -65,3 +65,18 @@
  - Local 파일과 repository 파일 간 충돌(다름)이 발생
  - Ex) 개발자 A가 수정을 하는 도중 개발자 B가 동일한 파일을 수정하여 commit 한 후, 개발자 A가 commit 하게 되면 발생
 (개발자 A가 수정을 시작한 revision과 개발자 B가 commit 한 후의 revision이 다름)
+
+
+## Git과 SVN의 차이
+
+### Git	
+ - 분산관리 방식 (DVCS, Division Version Control System)
+ - '로컬 작업공간 -> (스테이지 영역) -> 로컬저장소 -> 중앙서버' 의 형태
+ - 로컬 작업공간에서 작업을 진행하다가 중간중간 올리고자 하는 내용을 로컬저장소로 올려서 작업한 내용에 대한 이력을 관리
+ - 개발이 끝나서 해당 파일을 최종적으로 반영하고자 할 때, 그 때 중앙서버에 업로드
+
+### SVN
+ - 중앙집중형 방식 (CVCS, Central Version Control System)
+ - 중앙 서버에 올라간 소스코드를 사용자가 내려 받아 작업하고, 작업이 완료된 결과물을 commit하여 서버로 올려 보냄
+ - 소스코드를 관리하는 서버가 죽으면 그 시간 동안 update, commit 과정에 문제가 발생
+ - 소스를 공유하는 모든 작업자에게 영향을 줌 (실수가 있으면 다른 개발자에게 바로 영향을 미침)
