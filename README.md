@@ -12,8 +12,6 @@
  - 사내 서버에 설치되어 있으며, 주로 사내 인프라 담당자가 관리
  - URL: https://svn.mcnc.co.kr/svn/’ProjectName’ 또는 https://192.168.100.100/svn/’ProjectName’
 
-## 용어
-
 ### Repository
  - 파일들이 저장되는 원격 저장소
 
@@ -66,6 +64,7 @@
  - Ex) 개발자 A가 수정을 하는 도중 개발자 B가 동일한 파일을 수정하여 commit 한 후, 개발자 A가 commit 하게 되면 발생
 (개발자 A가 수정을 시작한 revision과 개발자 B가 commit 한 후의 revision이 다름)
 
+---
 
 ## Git과 SVN의 차이
 
